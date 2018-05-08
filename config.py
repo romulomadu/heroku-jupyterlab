@@ -15,7 +15,7 @@ except (NameError, KeyError):
 
 PASSWORD = os.environ.get('PASSWORD', '')
 
-c = get_config()
+#c = get_config()
 c.NotebookApp.contents_manager_class = S3ContentsManager
 c.S3ContentsManager.access_key_id = AWS_ACCESS_KEY_ID
 c.S3ContentsManager.secret_access_key = AWS_SECRET_ACCESS_KEY
